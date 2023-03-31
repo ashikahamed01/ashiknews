@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import Article from './article';
 import SearchBar from './searchbar';
-import { getArticles, searchArticles } from './api';
+const axios = require('axios');
+
 import './App.css';
 const App = () => {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
     const fetchArticles = async () => {
-      const articles = await getArticles('bbc-news');
-      setArticles(articles);
+      const response = await axios.get('/articles/bbc-news');
+      setArticles(response.data);
     };
     fetchArticles();
   }, []);
 
   const handleSearch = async (query) => {
-    const articles = await searchArticles(query);
-    setArticles(articles);
+    const response = await axios.get(`/search/${query}`);
+    setArticles(response.data);
   };
 
   return (

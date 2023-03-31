@@ -1,0 +1,31 @@
+body {
+  background-color: #b4a86e;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #571e1e;
+  box-shadow: 0px 1px 3px rgba(242, 102, 102, 0.2);
+  width: 50%;
+  max-width: 500px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  background-color: #eb4949;
+  color: #eb2f2f;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+}

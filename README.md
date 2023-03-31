@@ -2,6 +2,8 @@ Live website news aggregator link:https://uui-qus0.onrender.com/
 
 Here newsapi are used to fetch the news and feed into a website and react js for frontend and node js are used for backend.
 
+for ouput see my video.I uploaded above.
+
 Basic step to create react app
 
 # Getting Started with Create React App
